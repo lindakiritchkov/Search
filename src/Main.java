@@ -1,6 +1,4 @@
-import Model.FrontierBFS;
-import Model.FrontierDFS;
-import Model.FrontierLCFS;
+import Model.*;
 
 public class Main {
 
@@ -12,8 +10,18 @@ public class Main {
 
         System.out.println("----- Starting BFS search -----");
         new GraphSolver(new FrontierBFS());
+        System.out.println("");
 
         System.out.println("----- Starting LCFS search -----");
         new GraphSolver(new FrontierLCFS());
+        System.out.println("");
+
+        System.out.println("----- Starting Best-First search -----");
+        new GraphSolver(new FrontierBestFS());
+        System.out.println("");
+
+        System.out.println("----- Starting A* search -----");
+        new GraphSolver(new FrontierAStar());
+        System.out.println("");
     }
 }
