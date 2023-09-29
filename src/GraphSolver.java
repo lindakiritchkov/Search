@@ -18,6 +18,7 @@ public class GraphSolver {
 
         if (solutionPath.isEmpty()) {
             System.out.println("No solution found.");
+            return;
         }
 
         String pathToPrint = "";
